@@ -1,0 +1,156 @@
+body {
+    /* background-image: url("miami.JPG"); */
+    background-image: url("imgs/background/miami.JPG");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire */
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: rgba(204, 202, 202, 0.836);
+    margin: 10px;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    margin: inherit;
+    border-radius: 8px;
+    opacity: 75%;
+}
+
+ul { /*these are bad */
+    list-style: none;
+    display: flexbox;
+    flex-direction: vertical;
+    padding: 0;
+    text-decoration: none;
+}
+
+li {
+    display: inline-block;
+    color: white;
+    border-radius: 3px;
+    padding: 2px;
+    margin-left: 0px;
+}
+
+li:hover {
+    text-decoration: underline;
+}
+li:first-child {
+    margin-left: 0;
+}
+ a { /*this seems to overide the underlying styles*/
+    text-decoration: none;
+    color: inherit;
+} 
+a:hover {
+    text-decoration: underline;
+}
+
+.features{
+    background: none;
+    /* color: rgba(204, 202, 202, 0.836); */
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+  
+.features figure {
+    background: none;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    width: 200px;
+}
+
+.features a { /* this is so not clean */
+    background: none;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    width: 200px;
+}
+
+
+.features figcaption{
+    /* background-image: url("granite2.jpg"); */
+    /* color: rgba(61, 179, 67, 0.432); */
+}
+
+  
+.features figure img {
+    /* border: 1px solid white; */
+    /* border-radius: 50%; */
+    /* box-shadow: gray 0 0 15px; */
+    width: 200px;
+}
+
+.about_main {
+    display: flexbox;
+    flex-direction: vertical;
+    margin: 10px;
+    text-align: justify;
+    text-justify: inter-word;     
+}
+
+.about_main div{
+    background-image: url("imgs/background/granite2.jpg");
+    opacity: 90%;
+    margin: inherit;
+    padding: 8px;
+    border-radius: 8px;
+    /* border: body.color;
+    border-width: 1px;
+    border-style: solid; */
+}
+
+.skills {
+    background-image: url("imgs/background/granite2.jpg");
+    opacity: 90%;
+    text-align: center;
+    border-radius: 8px;
+    margin: inherit;
+}
+
+.skills ul {
+    list-style: none;
+    display: inline-block;
+    /* flex-direction: vertical; */
+    padding: 0;
+    /* text-decoration: none; */
+    list-style-type: disc;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+    list-style-position: inside; /*this is important addition*/
+}
+
+.skills li {
+    /* display: inline-block; */
+    color: inherit;
+    border-radius: 3px;
+    padding: 2px;
+    margin-left: 0px;
+    text-align: inherit;
+    text-decoration: none;
+}
+
+.skills:hover {
+        text-decoration: none;
+}
+
+footer { /* i dont like how alot of this code is repeated from header*/
+    background-color: black;
+    text-align: center;
+    padding: 8px;
+    margin: inherit;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    opacity: 75%;
+    margin-top: auto;
+}
