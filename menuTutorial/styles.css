@@ -28,6 +28,18 @@ body {
 #menu[data-active-index="3"] > #menu-background-pattern {
     background-position: 0% -100%;
 }
+#menu[data-active-index="0"] > #menu-background-image {
+    background-position: center 45%;
+}
+#menu[data-active-index="1"] > #menu-background-image {
+    background-position: center 50%;
+}
+#menu[data-active-index="2"] > #menu-background-image {
+    background-position: center 55%;
+}
+#menu[data-active-index="3"] > #menu-background-image {
+    background-position: center 60%;
+}
 
 #menu-background-pattern {
     height: 100vh;
@@ -52,23 +64,31 @@ body {
     background-position: 800ms ease;
 }
 
+#menu-background-image {
+    background-image: url("/home/ollie/webdev/ollieellis.github.io/menuTutorial/imgs/miami.JPG");
+    background-position: left 40%;
+    background-size: 110vmax;
+    height: 100%;
+    left: 0px;
+    opacity: 0.15;
+    position: absolute;
+    top: 0px;
+    transition: opacity 800ms ease,
+        background-size 800ms ease,
+        background-position 800ms ease;
+    width: 100%;
+    z-index: 0;
+}
+
 #menu-items:hover ~ #menu-background-pattern {
     background-size: 11vmin 11vmin;
     opacity: 0.5;
 }
 
-/* #menu[data-active-index="0"] > #menu-background-image {
-    background-position: center 45%;
+#menu-items:hover ~ #menu-background-image {
+    background-size: 100vmax;
+    opacity: 0.1;
 }
-#menu[data-active-index="1"] > #menu-background-image {
-    background-position: center 50%;
-}
-#menu[data-active-index="2"] > #menu-background-image {
-    background-position: center 55%;
-}
-#menu[data-active-index="3"] > #menu-background-image {
-    background-position: center 60%;
-} */
 
 #menu-items:hover > .menu-item {
     opacity: 0.3;
