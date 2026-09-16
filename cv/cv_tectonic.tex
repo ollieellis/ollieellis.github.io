@@ -1,0 +1,320 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+% \input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+% \pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Oliver Babington Ellis} \\ \vspace{1pt}
+    \vspace{3mm}  % Adjust the 5mm to your preferred size
+    % 123 Street Name, Town, State 12345 \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +44 7715 435 931 ~ \href{mailto:ollieellis1@outlook.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{ollieellis1@outlook.com}} ~ 
+    \href{https://www.linkedin.com/in/oliver-babington-ellis-29217518b/}{\raisebox{-0.2\height}\faLinkedin\ \underline{/oliver-babington-ellis-29217518b}}  ~
+    \href{https://github.com/ollieellis}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/ollieellis}}
+    \vspace{-8pt}
+\end{center}
+
+% %------RELEVANT COURSEWORK-------
+% \section{Relevant Coursework}
+%     %\resumeSubHeadingListStart
+%         \begin{multicols}{4}
+%             \begin{itemize}[itemsep=-5pt, parsep=3pt]
+%                 \item\small Data Structures
+%                 \item Software Methodology
+%                 \item Algorithms Analysis
+%                 \item Database Management
+%                 \item Artificial Intelligence
+%                 \item Internet Technology
+%                 \item Systems Programming
+%                 \item Computer Architecture
+%             \end{itemize}
+%         \end{multicols}
+%         \vspace*{2.0\multicolsep}
+%     %\resumeSubHeadingListEnd
+
+\vspace{1mm}  % Adjust the 5mm to your preferred size
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Nanook Energy Advisors}{July 2025 -- Present}
+      {Software Engineer $|$ Python $\cdot$ Kubernetes $\cdot$ AWS}{}
+      \resumeItemListStart
+        \resumeItem{Architected the greenfield cloud and data platform to power quantitative research and strategy development/deployment}
+        \resumeItem{Co-developed an LLM agentic harness for orchestrated intelligence gathering, integrating tool execution, prompt A/B testing, and LLM cost/token tracking}
+        \resumeItem{Productionised quantitative models and dashboards into robust Kubernetes workloads, establishing automated scheduling, monitoring, and self-service deployment templates with CI/CD}
+        \resumeItem{Engineered distributed, parallel backtesting pipelines and frameworks leveraging Argo Workflows}
+        \resumeItem{Provisioned and maintained all underlying infrastructure---including the EKS cluster, databases, and third-party services---integrating comprehensive MLOps and observability for operational resilience}
+      \resumeItemListEnd
+
+    \vspace{3mm}
+
+    \resumeSubheading
+      {Acorn Insurance}{April 2023 -- June 2025}
+      {Software Engineer $|$ Python(FastAPI) Microservices $\cdot$ Kubernetes $\cdot$ Azure}{}
+      % {Software Engineer}{}
+      \resumeItemListStart
+        \resumeItem{Sole developer on the data science team and the main point of contact between other DevOps teams and data scientists}
+        \resumeItem{Designed and built applications for critical real-time business operations, driving price optimisation and enabling predictive analytics for claims cost and intervention probabilities}
+        \resumeItem{Aided the data scientists in the standardisation of ML pipelines, delivering reusable objects for rapid development and automated retraining, complemented by robust data preparation and pipelines}
+        \resumeItem{Met all requirements with almost 100\% availability and response times under SLA with good margins and scalability}
+        \resumeItem{Maintained a key focus on observability (LGTM stack) during app development, ensuring app performance and stability, delivering said performance/stability metrics and insights to stakeholders for informed, confident decision-making}
+        \resumeItem{Led the migration of data ingestion jobs to a real-time event-driven architecture}
+      \resumeItemListEnd
+
+
+    \vspace{3mm}  % Adjust the 5mm to your preferred size
+      
+    \resumeSubheading
+      {Mastercard}{March 2022 -- April 2023}
+      {Software Engineer $|$ Go / Python Microservices $\cdot$ Kubernetes $\cdot$ Azure}{}
+      % {Operations Developer }{}
+      \resumeItemListStart
+        \resumeItem{Key actor in the deployment of an ML anti-fraud application scoring over 99.9\% of UK bank transactions}
+        \resumeItem{Provided real-time support to maintain downtime/service degradation within the requirements of our SLA}
+        \resumeItem{Worked between the MLEs and data engineers to harmonise simultaneous development/deployments}
+    \resumeItemListEnd
+
+    \vspace{3mm}  % Adjust the 5mm to your preferred size
+    
+    \resumeSubheading
+      {KX - First Derivatives}{October 2021 -- March 2022}
+      {Software Engineer, Capital Markets Graduate Programme $|$ Kdb+ $\cdot$ Q}{}
+      \resumeItemListStart
+        \resumeItem{Lone software engineer deployed to a Formula 1 race team tasked with the creation of a Race Ops application}
+        \resumeItem{Co-authored data ingestion pipelines to meet strict requirements to ensure data was available to trackside engineers}
+        \resumeItem{Co-delivered a Proof of Concept to the Renault Clio Cup, securing both a product sale and future contracted work}
+        \resumeItem{Developed a strong self-taught foundation in Q/Kdb+, going beyond the standard grad course through personal projects including building tickerplants across TimescaleDB, Influx, and Prometheus}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+\vspace{5mm}  % Adjust the 5mm to your preferred size
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Imperial College London}{Graduated May 2021}
+      {Bachelor of Engineering in Computer Engineering (EIE), Upper Second-Class Honours}{}
+     \vspace{-16pt}
+    \resumeSubHeadingListEnd
+
+\vspace{3mm}
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages Advanced}{: Python (NumPy, Pandas, FastAPI...)} \\
+     \textbf{Languages Intermediate}{: SQL, Kdb+/q, Go} \\
+     \textbf{Languages Beginner}{: C++, C\#, R} \\
+     \textbf{DevOps and Infra}{: Kubernetes, Docker, Helm, Terraform, Azure Pipelines, Git, AWS Lambda, Argo Workflows} \\
+     \textbf{Data Storage/Processing}{: Postgres, Delta Lake, Mongo, Redis, Kafka, Azure Service Bus, Fivetran, Kdb+, TimescaleDB} \\
+     \textbf{Cloud}{: AWS, Azure, Google Cloud Platform, Firebase, Databricks} \\
+     \textbf{Observability}{: Prometheus, Grafana, Kibana, Loki, Tempo} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+\iffalse
+% \clearpage % If you want to enforce a page break here
+\vfill % To push the text to the bottom
+\begin{center}
+\textit{Please turn over}
+\end{center}
+\clearpage % To start the new page after the note
+
+\vspace{5mm}  % Adjust the 5mm to your preferred size
+%-----------EDUCATION-----------
+\section{Profile}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {}{}
+      {}{}
+      \vspace{-25pt} %should just look atthe styling to do a para...
+     % \begin{itemize}[leftmargin=0.15in, label={}]
+        \small{\item{
+         \textbf{}{As a Computer Engineering graduate with a proven track record of academic excellence, including achieving 100\% in multiple exams (mostly maths). My diverse experience, sitting in different roles across machine learning and development teams, has equipped me with a comprehensive appreciation of the entire software lifecycle, from development to deployment. This experience is further enriched by my hands-on knowledge in both development and operations, emphasizing my ability to deliver robust solutions while understanding the synergy within a tech team. \\
+      \vspace{4pt} %should just look atthe styling to do a para...
+
+        My professional journey is marked by a strong preference for collaborative, in-person work environments where I can contribute to and learn from my peers. I thrive in settings that require teamwork and actively seek opportunities to engage in dynamic group projects. This inclination towards collaboration is matched by my genuine and substantial passion for technology. I am constantly engaged in enhancing my technical knowledge, whether it be through mastering the fundamentals or exploring the bleeding edge of tech advancements. This enthusiasm extends beyond my professional life, by reading extensively and frequently attending tech events, immersing myself in the latest industry trends and connecting with fellow tech enthusiasts. \\
+      \vspace{4pt} %should just look atthe styling to do a para...
+       
+        In summary, I am a driven and adaptable professional with a keen interest in all things tech. My approach combines a solid foundation in mathematics, a wide-ranging technical skill set, and a sincere commitment to continuous learning and professional growth.} \\
+        }}
+        % \end{itemize}
+     \vspace{-16pt}
+  \resumeSubHeadingListEnd
+\vspace{5mm}  % Adjust the 5mm to your preferred size
+%-----------PROJECTS-----------
+\section{Projects and Courses}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+        \resumeProjectHeading
+          {\textbf{Time Priority Order Book} $|$ \emph{Python}}{2024}
+        \resumeItemListStart
+            \vspace{4pt}
+            \resumeItem{Implemented order book to accept market, limit and stop orders for simulations of historic market events/exchanges}
+          \resumeItemListEnd
+          \vspace{-8pt}
+
+    \resumeProjectHeading
+          {\textbf{Recruitment AI web app} $|$ \emph{React (Typescript), Python, Firebase}}{November 2023}
+        \resumeItemListStart
+            \vspace{4pt}
+            \resumeItem{Leveraged OpenAI assistants to develop a user-friendly web app, enabling non-technical recruiters to interact effectively with candidates in technical screenings (GPT wrapper).}
+            \resumeItem{Integrated drag-and-drop functionality for easy upload and AI-driven analysis of CVs and job descriptions, converting them from PDF to text for processing}
+            \resumeItem{Established a robust testing framework to ensure the reliability of the web app, while continuously updating agents to align with the latest advancements in AI}
+          \resumeItemListEnd
+          \vspace{-8pt}
+
+      \resumeProjectHeading
+          {\textbf{Practical Time Series Analysis} $|$ \emph{Python, r}}{June 2024}
+        \resumeItemListStart
+            \vspace{4pt}
+            \resumeItem{6 week online course supplied by The State University of New York}
+            \resumeItem{Gained proficiency in time series analysis techniques including ARIMA, SARIMA, and exponential smoothing}
+          \resumeItemListEnd
+          \vspace{-8pt}
+          
+    \resumeSubHeadingListEnd
+% \vspace{-15pt}
+
+
+
+
+
+% %-----------INVOLVEMENT---------------
+% \section{Leadership / Extracurricular}
+%     \resumeSubHeadingListStart
+%         \resumeSubheading{Fraternity}{Spring 2020 -- Present}{President}{University Name}
+%             \resumeItemListStart
+%                 \resumeItem{Achieved a 4 star fraternity ranking by the Office of Fraternity and Sorority Affairs (highest possible ranking).}
+%                 \resumeItem{Managed executive board of 5 members and ran weekly meetings to oversee progress in essential parts of the chapter.}
+%                 \resumeItem{Led chapter of 30+ members to work towards goals that improve and promote community service, academics, and unity.}
+%             \resumeItemListEnd
+        
+%     \resumeSubHeadingListEnd
+
+\fi
+
+\end{document}
